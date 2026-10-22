@@ -15,8 +15,7 @@ Example:
 ```yaml
 sync_bridge:
     container_name: lab_sync_bridge
-    build:
-      context: ./sync_bridge
+    image: ghcr.io/rangodemango/nextcloud-paperless-sync:latest
     restart: unless-stopped
     depends_on:
       - paperless_webserver
